@@ -1,0 +1,129 @@
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (6.1ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [4;35;1mSQL (4.3ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to People (20090625225223)
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (9.0ms)[0m   [0;1mCREATE TABLE "people" ("id" serial primary key, "name" character varying(255), "street1" character varying(255), "street2" character varying(255), "city" character varying(255), "state" character varying(255), "zip" character varying(255)) [0m
+  [4;35;1mSQL (0.8ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090625225223')[0m
+  [4;36;1mSQL (1.5ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (2.2ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to People (20090625225223)
+Migrating to CreatePeople (20090625225429)
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPGError: ERROR: relation "people" already exists
+: CREATE TABLE "people" ("id" serial primary key, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;35;1mSQL (0.2ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to People (20090625225223)
+Migrating to CreatePeople (20090625225429)
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPGError: ERROR: relation "people" already exists
+: CREATE TABLE "people" ("id" serial primary key, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreatePeople (20090625225429)
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPGError: ERROR: relation "people" already exists
+: CREATE TABLE "people" ("id" serial primary key, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;35;1mSQL (0.1ms)[0m   [0mROLLBACK[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (6.0ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [4;35;1mSQL (4.5ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+Migrating to CreatePeople (20090625225429)
+  [4;35;1mSQL (0.1ms)[0m   [0mBEGIN[0m
+  [4;36;1mSQL (7.9ms)[0m   [0;1mCREATE TABLE "people" ("id" serial primary key, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;35;1mSQL (0.8ms)[0m   [0mINSERT INTO schema_migrations (version) VALUES ('20090625225429')[0m
+  [4;36;1mSQL (1.1ms)[0m   [0;1mCOMMIT[0m
+  [4;35;1mSQL (0.5ms)[0m   [0mSELECT version FROM schema_migrations[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.7ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET search_path TO public[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPGError: ERROR: must be owner of database postgres_sample_proj_test
+: DROP DATABASE IF EXISTS "postgres_sample_proj_test"[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET search_path TO public[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPGError: ERROR: must be owner of database postgres_sample_proj_test
+: DROP DATABASE IF EXISTS "postgres_sample_proj_test"[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET search_path TO public[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mPGError: ERROR: must be owner of database postgres_sample_proj_test
+: DROP DATABASE IF EXISTS "postgres_sample_proj_test"[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET search_path TO public[0m
+  [4;36;1mSQL (118.5ms)[0m   [0;1mDROP DATABASE IF EXISTS "postgres_sample_proj_test"[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.3ms)[0m   [0mSET search_path TO public[0m
+  [4;36;1mSQL (369.6ms)[0m   [0;1mCREATE DATABASE "postgres_sample_proj_test" ENCODING = 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (13.2ms)[0m   [0mCREATE TABLE "people" ("id" serial primary key, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;36;1mSQL (2.6ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [4;35;1mSQL (3.6ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (1.4ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20090625225429')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET search_path TO public[0m
+  [4;36;1mSQL (118.2ms)[0m   [0;1mDROP DATABASE IF EXISTS "postgres_sample_proj_test"[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET search_path TO public[0m
+  [4;36;1mSQL (376.3ms)[0m   [0;1mCREATE DATABASE "postgres_sample_proj_test" ENCODING = 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (13.5ms)[0m   [0mCREATE TABLE "people" ("id" serial primary key, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;36;1mSQL (2.6ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [4;35;1mSQL (4.1ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.5ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20090625225429')[0m
+  [4;36;1mSQL (0.2ms)[0m   [0;1mSET client_min_messages TO 'panic'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'notice'[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT version FROM schema_migrations[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET search_path TO public[0m
+  [4;36;1mSQL (119.7ms)[0m   [0;1mDROP DATABASE IF EXISTS "postgres_sample_proj_test"[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (0.2ms)[0m   [0mSET search_path TO public[0m
+  [4;36;1mSQL (527.6ms)[0m   [0;1mCREATE DATABASE "postgres_sample_proj_test" ENCODING = 'utf8'[0m
+  [4;35;1mSQL (0.1ms)[0m   [0mSET client_min_messages TO 'panic'[0m
+  [4;36;1mSQL (0.1ms)[0m   [0;1mSET client_min_messages TO 'notice'[0m
+  [4;35;1mSQL (12.8ms)[0m   [0mCREATE TABLE "people" ("id" serial primary key, "created_at" timestamp, "updated_at" timestamp) [0m
+  [4;36;1mSQL (2.7ms)[0m   [0;1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [4;35;1mSQL (4.2ms)[0m   [0mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [4;36;1mSQL (0.6ms)[0m   [0;1mSELECT version FROM "schema_migrations"[0m
+  [4;35;1mSQL (1.3ms)[0m   [0mINSERT INTO "schema_migrations" (version) VALUES ('20090625225429')[0m
